@@ -1,0 +1,147 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.fundo {
+    background-image: url('../Imagens/fundo.jpg');
+    position: fixed;
+    top: 0; left: 0;
+    width: 100vw;
+    height: 100vh;
+    transform: scale(1.1);
+    background-size: cover;
+    background-position: center;
+    filter: blur(3px);
+    z-index: -1;
+}
+
+header {
+    text-align: center;
+    color: #4d281d;
+    background-color: rgba(255, 255, 255, 0.13);
+    padding: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.box {
+    background-color: #6e3828bd;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 500px;
+    width: 350px;
+    border-radius: 20px;
+    padding: 30px;
+    box-sizing: border-box;
+}
+
+.conteudo {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+}
+
+.conteudo h1 {
+    color: white;
+    padding: 20px 0;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 500;
+    text-align: center;
+}
+
+
+.login label {
+    color: white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 100;
+    display: block;
+    margin-bottom: 8px;
+    text-align: left;
+}
+
+.login {
+    width: 100%;
+    margin: 15px 0;
+}
+
+.logar {
+    padding: 10px;
+    border-radius: 8px;
+    border: none;
+    width: 100%;
+    box-sizing: border-box;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.password label {
+    color: white;
+    font-weight: 100;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    display: block;
+    margin-bottom: 8px;
+    text-align: left;
+}
+
+.password {
+    width: 100%;
+    margin: 15px 0;
+}
+
+.senha {
+    padding: 10px;
+    border-radius: 8px;
+    border: none;
+    width: 100%;
+    box-sizing: border-box;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    text-align: left;
+    padding-left: 0;
+}
+
+.botao {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+
+.botao button {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+    border: none;
+    padding: 10px 30px;
+    border-radius: 8px;
+    cursor: pointer;
+    width: auto;
+    color: #392620;
+    transition: 0.5s;
+}
+
+.botao button:hover {
+    color: white;
+    background-color: #6e3828bd;
+}
+
+.botao button:active {
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.register {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.register a {
+    color: white;
+
+}

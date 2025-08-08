@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="../Estilo/Gerenciar_Estoque.css">
+</head>
+<body>
+
+    <input type="checkbox" id="mudar_menu" hidden>
+
+    <header>
+
+        <h1>FasTock</h1>
+
+    </header>
+
+
+    <main>
+
+        <nav class="barra_lateral">
+
+            <div class="logo">
+
+                <img src="../Imagens/logo.png" alt="logo">
+
+            </div>
+
+
+            <ul>
+
+                <li>
+
+                    <a href="./Home.html">
+
+                        <img src="../Imagens/home.png" alt="Ícone Home">
+
+                        <span class="texto_menu">Home</span>
+
+                    </a>
+
+                </li>
+
+
+
+                <li>
+
+                    <a href="./Estoque.html">
+
+                        <img src="../Imagens/estoque.png" alt="Ícone Estoque">
+
+                        <span class="texto_menu">Estoque</span>
+
+                    </a>
+
+                </li>
+
+
+
+                <li>
+
+                    <a href="#">
+
+                        <img src="../Imagens/vendas.png" alt="Ícone Vendas">
+
+                        <span class="texto_menu">Vendas</span>
+
+                    </a>
+
+                </li>
+
+
+
+                <li>
+
+                    <a href="#">
+
+                        <img src="../Imagens/admin.png" alt="Ícone Admin">
+
+                        <span class="texto_menu">Admin</span>
+
+                    </a>
+
+                </li>
+
+
+
+                <li>
+                    
+                    <a href="#">
+
+                        <img src="../Imagens/dashboard.png" alt="Ícone Dashboard">
+
+                        <span class="texto_menu">Dashboard</span>
+
+                    </a>
+
+                </li>
+
+
+
+                <li>
+
+                    <a href="#">
+
+                        <img src="../Imagens/configuracoes.png" alt="Ícone Configurações">
+
+                        <span class="texto_menu">Configurações</span>
+
+                    </a>
+
+                </li>
+
+
+            </ul>
+
+        </nav>
+
+        <section class="conteudo">
+
+            <div class="texto_cabecario">
+
+                <p class="texto_pagina">CONTROLE DE ESTOQUE</p>
+
+            </div>
+
+
+
+            <div class="cabecario_adicionar">
+
+                <p>Adicionar Produto</p>
+
+            </div>
+
+
+
+            <section id="form-section" class="formulario_produto">
+            <div class="file-input-container">
+            <label for="imagem">Imagem do Produto</label>
+            <input type="file" id="imagem">
+            <img id="preview" alt="Pré-visualização" width="100">
+            </div>
+
+            <div>
+                <label for="NomeProduto">Nome Produto:</label>
+                <input type="text" id="NomeProduto">
+            </div>
+
+            <div>
+                <label for="descricaoProduto">Descrição:</label>
+                <input type="text" id="descricaoProduto">
+            </div>
+
+            <div>
+                <label for="unidadeProduto">Unidade:</label>
+                <input type="text" id="unidadeProduto">
+            </div>
+
+            <div>
+                <label for="valorCompra">Valor de Compra:</label>
+                <input type="number" id="valorCompra">
+            </div>
+
+            <div>
+                <label for="codigoBarras">Código de barras:</label>
+                <input type="text" id="codigoBarras">
+            </div>
+
+            <div>
+                <label for="categoriaProduto">Categoria:</label>
+                <select id="categoriaProduto">
+                    <option value="">Selecione</option>
+                    <option value="Bebidas">Bebidas</option>
+                    <option value="Alimentos">Alimentos</option>
+                    <option value="Limpeza">Limpeza</option>
+                    <option value="Higiene">Higiene</option>
+                    <option value="Eletrônicos">Eletrônicos</option>
+                    <option value="Outros">Outros</option>
+                </select>
+            </div>
+
+            <div>
+                <label for="quantidadeProduto">Quantidade:</label>
+                <input type="number" id="quantidadeProduto">
+            </div>
+
+            <div>
+                <label for="valorVenda">Valor de Venda:</label>
+                <input type="number" id="valorVenda">
+            </div>
+
+            <div>
+                <label for="fornecedorProduto">Fornecedor:</label>
+                <input type="text" id="fornecedorProduto">
+            </div>
+
+
+                <div class="adicionar_btn">
+
+                    <button id="btnAdicionar" onclick="adicionarProduto()" type="button">ADICIONAR</button>
+
+                </div>
+
+
+            </section>
+
+
+
+            <div class="cabecario_estoque">
+
+                <p>Estoque Atual</p>
+
+            </div>
+
+
+
+            <section id="estoque-section">
+
+                <table id="tabelaEstoque">
+
+                    <thead>
+
+                        <tr>
+
+                            <th>IMAGEM</th>
+
+                            <th>NOME</th>
+
+                            <th>CODIGO BARRAS</th>
+
+                            <th>DESCRIÇÃO</th>
+
+                            <th>CATEGORIA</th>
+
+                            <th>UNIDADE</th>
+
+                            <th>QUANTIDADE</th>
+
+                            <th>VALOR COMPRA</th>
+
+                            <th>VALOR VENDA</th>
+
+                            <th>FORNECEDOR</th>
+
+                            <th>EDITAR</th>
+
+                        </tr>
+
+                    </thead>
+
+                    <tbody id="corpoTabela"></tbody>
+
+                </table>
+
+
+            </section>
+
+
+        </section>
+
+
+    </main>
+
+    
+
+    <script src="../Configuracao/Gerenciar_Estoque.js"></script>
+</body>
+</html>
